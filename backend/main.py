@@ -151,3 +151,16 @@ def analyze(req: AnalyzeRequest):
     df = pd.DataFrame([v.model_dump() for v in req.vitals])
     risk, anomalies = analyze_df(df, len(df) - 30)
     return {"risk_score": risk, "anomalies": anomalies}
+
+
+from rules import CheckIn, RANGES, evaluate_checkin
+
+
+@app.post("/api/checkin")
+def checkin(data: CheckIn):
+    return evaluate_checkin(data)
+
+
+@app.get("/api/reference-ranges")
+def reference_ranges():
+    return RANGES
