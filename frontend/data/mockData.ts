@@ -24,31 +24,36 @@ export const NASA_FIVE_HAZARDS = [
   {
     id: "radiation",
     title: "Space Radiation",
-    summary: "Increased galactic cosmic rays and solar particle events beyond Earth's magnetic shield.",
+    summary:
+      "Increased galactic cosmic rays and solar particle events beyond Earth's magnetic shield.",
     focus: "Immune cells, DNA repair, cardiovascular tissue",
   },
   {
     id: "isolation",
     title: "Isolation & Confinement",
-    summary: "Extended living in small, enclosed quarters with limited crew rotation.",
+    summary:
+      "Extended living in small, enclosed quarters with limited crew rotation.",
     focus: "Mood stability, stress regulation, circadian sleep cycles",
   },
   {
     id: "distance",
     title: "Distance from Earth",
-    summary: "Communication delays and limited medical evacuation options require crew autonomy.",
+    summary:
+      "Communication delays and limited medical evacuation options require crew autonomy.",
     focus: "Early symptom detection & preventive self-guidance",
   },
   {
     id: "gravity",
     title: "Altered Gravity Fields",
-    summary: "Microgravity shifts fluids upward and reduces load on heart, bones, and muscles.",
+    summary:
+      "Microgravity shifts fluids upward and reduces load on heart, bones, and muscles.",
     focus: "Blood pressure shifts, bone density, vestibular balance",
   },
   {
     id: "environment",
     title: "Hostile & Closed Environment",
-    summary: "Recycled air, CO2 buildup risk, artificial lighting, and microbial containment.",
+    summary:
+      "Recycled air, CO2 buildup risk, artificial lighting, and microbial containment.",
     focus: "SpO2 saturation, respiratory hygiene, thermal comfort",
   },
 ];
@@ -73,7 +78,7 @@ export const CHECKIN_FIELDS: CheckinFieldConfig[] = [
     min: 20,
     max: 250,
     step: 1,
-    normalRange: "55 – 90 bpm",
+    normalRange: "60 – 100 bpm",
     instruction: "Rest calmly for 5 minutes before reading pulse sensor.",
     sentToBackend: true,
   },
@@ -84,7 +89,7 @@ export const CHECKIN_FIELDS: CheckinFieldConfig[] = [
     min: 50,
     max: 260,
     step: 1,
-    normalRange: "95 – 125 mmHg",
+    normalRange: "90 – 119 mmHg",
     instruction: "Keep arm cuff aligned with heart height while tethered.",
     sentToBackend: true,
   },
@@ -95,7 +100,7 @@ export const CHECKIN_FIELDS: CheckinFieldConfig[] = [
     min: 30,
     max: 160,
     step: 1,
-    normalRange: "60 – 82 mmHg",
+    normalRange: "60 – 79 mmHg",
     instruction: "Record the lower cuff reading alongside systolic BP.",
     sentToBackend: true,
   },
@@ -106,7 +111,7 @@ export const CHECKIN_FIELDS: CheckinFieldConfig[] = [
     min: 20,
     max: 600,
     step: 1,
-    normalRange: "70 – 100 mg/dL",
+    normalRange: "70 – 99 mg/dL",
     instruction: "Measure prior to first hydration/ration meal if possible.",
     sentToBackend: true,
   },
@@ -117,7 +122,7 @@ export const CHECKIN_FIELDS: CheckinFieldConfig[] = [
     min: 30,
     max: 43,
     step: 0.1,
-    normalRange: "36.1 – 37.3 °C",
+    normalRange: "36.1 – 37.2 °C",
     instruction: "Use ear/forehead thermal probe away from airflow vents.",
     sentToBackend: true,
   },
@@ -128,7 +133,7 @@ export const CHECKIN_FIELDS: CheckinFieldConfig[] = [
     min: 0,
     max: 24,
     step: 0.5,
-    normalRange: "7.0 – 8.5 hours",
+    normalRange: "7+ hours",
     instruction: "Include total sleep inside crew quarters sleep restraint.",
     sentToBackend: true,
   },
@@ -310,7 +315,7 @@ export const BODY_SYSTEMS: BodySystemInfo[] = [
       "Closed Environment (altered microbial balance inside cabin)",
     ],
     warningSigns: [
-      "Body temperature >= 37.6 °C",
+      "Body temperature >= 37.3 °C",
       "Skin rashes, slow-healing minor cuts, or recurring fatigue",
       "Poor sleep combined with elevated resting heart rate",
     ],
@@ -333,7 +338,7 @@ export const BODY_SYSTEMS: BodySystemInfo[] = [
       "Hostile & Closed Environment (limited fresh foods & ration fatigue)",
     ],
     warningSigns: [
-      "Fasting blood glucose outside 70 – 105 mg/dL",
+      "Fasting blood glucose outside 70 – 99 mg/dL",
       "Appetite suppression leading to rapid weight loss",
       "Persistent nausea or dehydration signs",
     ],
