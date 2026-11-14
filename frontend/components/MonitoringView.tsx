@@ -184,7 +184,7 @@ export function MonitoringView({
 
           <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
             <p className="text-[11px] text-slate-400">
-              Core 7 metrics are sent to your teammate&apos;s backend (`/api/checkin`) with automatic demo fallback if offline.
+              Core 7 metrics are sent to the CosmoCare backend (`/api/checkin`) with automatic demo fallback if offline.
             </p>
             <button
               type="submit"
@@ -239,7 +239,7 @@ export function MonitoringView({
               {lastMode === "backend" && (
                 <div className="flex items-center gap-2 rounded-xl border border-emerald-400/30 bg-emerald-500/10 px-3.5 py-2 text-[11px] text-emerald-200">
                   <CheckCircleIcon className="h-4 w-4 shrink-0" />
-                  <span>Connected to live teammate backend API (`/api/checkin`).</span>
+                  <span>Connected to live CosmoCare backend API (`/api/checkin`).</span>
                 </div>
               )}
 
